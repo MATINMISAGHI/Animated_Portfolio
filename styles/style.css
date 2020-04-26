@@ -356,8 +356,8 @@ nav ul {
 }
 
 .form-section form button {
-  width: 100%;
-  padding: 2rem;
+  width: 90%;
+  padding: 2rem 0rem;
   background-color: #154353;
   color: white;
 }
