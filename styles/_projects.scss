@@ -11,12 +11,27 @@
 }
 
 .photon,
-.photographer {
+.photographer,
+.yelp-camp
+{
     flex: 1 1 40rem;
 }
 
-// img.photon-img {
-//     border-radius: 20%;
-//     max-width: 10vw;
-//     max-height: 60vh;
-// }
+.proj-desc {
+    @include flex(center, center, row);
+    width: 70%;
+}
+
+.stacks {
+    flex: 1 1 10rem;
+}
+.stacks li {
+    font-size: 1.7rem;
+}
+
+.small-github {
+    max-width: 3vw;
+    flex: 1 1 10rem;
+    align-self: flex-start;
+}
+

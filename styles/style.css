@@ -298,10 +298,47 @@ nav ul {
 }
 
 .photon,
-.photographer {
+.photographer,
+.yelp-camp {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
+}
+
+.proj-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+}
+
+.stacks {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.stacks li {
+  font-size: 1.7rem;
+}
+
+.small-github {
+  max-width: 3vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .form-section {
@@ -374,6 +411,7 @@ footer {
   background-color: #154353;
   color: white;
   min-height: 10vh;
+  margin-top: 2rem;
   padding: 0% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,12 +530,12 @@ footer h4 {
   .intro-social a {
     margin: 2rem;
   }
-  .photon, .photographer {
+  .photon, .photographer, .yelp-camp {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50rem;
             flex: 1 1 50rem;
   }
-  .photon img, .photographer img {
+  .photon img, .photographer img, .yelp-camp img {
     width: 100%;
     height: 100%;
   }
