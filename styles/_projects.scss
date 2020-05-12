@@ -12,7 +12,8 @@
 
 .photon,
 .photographer,
-.yelp-camp
+.yelp-camp,
+.beatmaker
 {
     flex: 1 1 40rem;
 }
@@ -35,3 +36,6 @@
     align-self: flex-start;
 }
 
+.beatmaker {
+    align-self: flex-start;
+}
