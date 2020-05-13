@@ -306,6 +306,10 @@ nav ul {
           flex: 1 1 40rem;
 }
 
+.yelp-camp h2 {
+  margin-bottom: 2.5rem;
+}
+
 .proj-desc {
   display: -webkit-box;
   display: -ms-flexbox;

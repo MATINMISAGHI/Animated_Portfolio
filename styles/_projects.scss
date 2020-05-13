@@ -18,6 +18,10 @@
     flex: 1 1 40rem;
 }
 
+.yelp-camp h2 {
+    // line-height: 3rem;
+    margin-bottom: 2.5rem;
+}
 .proj-desc {
     @include flex(center, center, row);
     width: 70%;
