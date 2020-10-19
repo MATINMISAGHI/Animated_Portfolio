@@ -1,6 +1,6 @@
 .projects {
     width: 90%;
-    margin: auto;
+    margin: 5rem auto;
     min-height: 90vh;
     @include flex(space-between, center, row);
     text-align: center;
@@ -10,28 +10,28 @@
     }
 }
 
-.photon,
+.scrolling,
 .photographer,
-.yelp-camp,
-.beatmaker
-{
-    flex: 1 1 40rem;
+.lit-shoes,
+.portfolio {
+    flex: 1 1 50rem;
+    img {
+        width: 90%;
+        height: 90%;
+    }
 }
 
-.yelp-camp h2 {
-    // line-height: 3rem;
-    margin-bottom: 2.5rem;
+.lit-shoes h2 {
+    padding: 0;
+    margin: 0;
+}
+.lit-shoes p {
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
 }
 .proj-desc {
     @include flex(center, center, row);
     width: 70%;
-}
-
-.stacks {
-    flex: 1 1 10rem;
-}
-.stacks li {
-    font-size: 1.7rem;
 }
 
 .small-github {
@@ -40,6 +40,8 @@
     align-self: flex-start;
 }
 
-.beatmaker {
-    align-self: flex-start;
+// it is slightly bigger than other SVGs
+.portfolio img[src="./img/web_dev.svg"] {
+    width: 77%;
+    height: 75%;
 }

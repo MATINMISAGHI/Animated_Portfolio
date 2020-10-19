@@ -10,14 +10,16 @@ html {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h1 {
     font-size: $header1;
 }
 
-li, button, label, input, a, p {
+li,
+a,
+p {
     font-size: $text;
 }
 
@@ -29,7 +31,8 @@ h3 {
     font-size: $header3;
 }
 
-h4, h5 {
+h4,
+h5 {
     font-size: $header4;
 }
 

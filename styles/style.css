@@ -11,26 +11,29 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-size: 2.5rem;
 }
 
-li, button, label, input, a, p {
+li,
+a,
+p {
   font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 h3 {
   font-size: 2.5rem;
 }
 
-h4, h5 {
+h4,
+h5 {
   font-size: 2rem;
 }
 
@@ -88,7 +91,7 @@ nav .logo {
 }
 
 nav .logo h1 {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 nav ul {
@@ -142,7 +145,7 @@ nav ul {
 }
 
 .intro h3 {
-  font-size: 6rem;
+  font-size: 4rem;
   padding: 2rem 0rem;
 }
 
@@ -167,14 +170,8 @@ nav ul {
   margin-right: 5rem;
 }
 
-.active {
-  background: #2c2c2c;
-  color: white;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-}
-
-.intro-text, .intro-images {
+.intro-text,
+.intro-images {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -273,7 +270,7 @@ nav ul {
 
 .projects {
   width: 90%;
-  margin: auto;
+  margin: 5rem auto;
   min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,17 +294,31 @@ nav ul {
   margin: 5rem;
 }
 
-.photon,
+.scrolling,
 .photographer,
-.yelp-camp,
-.beatmaker {
+.lit-shoes,
+.portfolio {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
 }
 
-.yelp-camp h2 {
-  margin-bottom: 2.5rem;
+.scrolling img,
+.photographer img,
+.lit-shoes img,
+.portfolio img {
+  width: 90%;
+  height: 90%;
+}
+
+.lit-shoes h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.lit-shoes p {
+  font-size: 1.7rem;
+  padding-bottom: 0.5rem;
 }
 
 .proj-desc {
@@ -327,16 +338,6 @@ nav ul {
   width: 70%;
 }
 
-.stacks {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
-}
-
-.stacks li {
-  font-size: 1.7rem;
-}
-
 .small-github {
   max-width: 3vw;
   -webkit-box-flex: 1;
@@ -346,75 +347,9 @@ nav ul {
       align-self: flex-start;
 }
 
-.beatmaker {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
-.form-section {
-  min-height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 3rem;
-}
-
-.form-section form {
-  padding: 3rem 10rem;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 2rem;
-}
-
-.form-section form input, .form-section form textarea {
-  margin: 2rem;
-}
-
-.form-section form input:focus, .form-section form textarea:focus {
-  outline: 2px solid black;
-}
-
-.form-section form textarea {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-}
-
-.form-section form button {
-  width: 90%;
-  padding: 2rem 0rem;
-  background-color: #154353;
-  color: white;
-}
-
-.form-section form button:focus {
-  background-color: #209296;
-}
-
-.form-section form button:hover {
-  background-color: #209296;
+.portfolio img[src="./img/web_dev.svg"] {
+  width: 77%;
+  height: 75%;
 }
 
 footer {
@@ -487,9 +422,6 @@ footer h4 {
   .main-head {
     width: 100%;
   }
-  nav {
-    margin: 2rem;
-  }
   nav .logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -540,18 +472,20 @@ footer h4 {
   .intro-social a {
     margin: 2rem;
   }
-  .photon, .photographer, .yelp-camp, .beatmaker {
+  .scrolling,
+  .photographer,
+  .lit-shoes,
+  .portfolio {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50rem;
             flex: 1 1 50rem;
   }
-  .photon img, .photographer img, .yelp-camp img, .beatmaker img {
-    width: 100%;
-    height: 100%;
-  }
-  form {
-    padding: 0rem;
-    width: 100%;
+  .scrolling img,
+  .photographer img,
+  .lit-shoes img,
+  .portfolio img {
+    width: 90%;
+    height: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
